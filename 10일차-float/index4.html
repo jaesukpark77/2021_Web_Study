@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>float #1</title>
+    <style>
+        *{margin:0;padding:0;}
+        #a{background-color:#123456;}
+        #b{background-color:#987654;}
+        
+        #a div{width:100px;height:100px;font-size:15px;}
+        #b div{width:100px;height:100px;float:right;}
+        
+        #a div:nth-child(1){background-color:red;float:left}
+        #a div:nth-child(2){background-color:green;float:left}
+        #a div:nth-child(3){background-color:pink;float:left}
+        
+        #b div:nth-child(1){background-color:orange;}
+        #b div:nth-child(2){background-color:violet;}
+        #b div:nth-child(3){background-color:aqua;}
+        
+        .clearfix:after{content:"안녕";display:block;clear:both;}
+        
+        /*:after = 앞에 있는 선택자 뒤에 만들겠다*/
+        /*content:"" = 내용물이 비어있다.*/
+        /*display:block = 입력산 대상을 display:block 형태로 만들어 주는 구문*/
+        /*clear:both = float 구문이 더 이상 다른 대상을 떙기지 못하도록 만들어주는 구문*/
+    </style>
+</head>
+<body>
+    <div id="a" class="clearfix">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    
+    <div id="b">
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>
