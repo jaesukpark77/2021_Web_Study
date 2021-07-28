@@ -1,0 +1,20 @@
+float
+display:block 속성에 사용하는 css속성으로
+세로배치 -> 가로배치
+
+float 사용시 주의할 점
+1. 사용하면 다른태그가 겹쳐지는 현상이 발생한다
+
+2. 사용하면 감싸고 있는 태그의 세로값이 사라진다.
+
+float 해체하는 방법
+float가 들어간 부모태그 한테 class="이름 자유" 넣어주신 다음
+
+css 속성에서
+이름자유:after{content:"";display:block;clear:both} 넣어주기
+
+★float:right
+오른쪽 가로 정렬 시켜주는 css 속성
+
+display / margin / float
+배치와 관련된 css속성!!!
