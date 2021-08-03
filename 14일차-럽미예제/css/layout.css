@@ -1,0 +1,54 @@
+*{margin:0;padding:0}
+li{list-style:none;}
+a{text-decoration:none;color:black;}
+.clearfix:after{content:"";display:block;clear:both;}
+
+#wrap{width:100%;} 
+/*#wrap의 경우는 큰역할이 없는 기본적으로 적어주는 태그이기 때문에 별다른 css속성이 들어가지 않는다.*/
+
+#margin_wrap{margin:0 auto;width:1140px}
+/*#margin_wrap은 웹사이트의 모든 html태그를 중앙정렬 시켜주는 역할이기 때문에 가로값과 margin:0 auto 들어가야 하며 가로값은 이미지를 참고해서 알아서 측정한다.*/
+
+#header{height:110px;}
+/*#header는 단순히 태그의 구역을 나눠주는 역할이기 때문에 구역을 나눠줄만한 css속성만 작성을 해주면 된다*/
+
+/*#header 가로값을 주지 않았는데도 왜 가로가 들어가 있는가?
+#header div태그이며 div태그는 display:block
+display:block 속성을 가진 html태그들은 가로값을 주지 않으면 자기가 소속되어 있는 태그의 최대 가로길이에 맞춰서 자동으로 가로값이 선정이된다*/
+
+h1{margin:0 auto;width:70px;height:70px;margin-top:40px;}
+/*margin:0 auto는 width값이 무조건 있어야한다
+이미지 크기와 동일하게 해주면 해결된다.*/
+
+#nav{height:50px;border-top:1px solid gray;}
+
+#nav li{width:96px;height:50px;float:left;margin-left:20px;
+        text-align:center;line-height:50px;
+        font-size:20px;}
+#nav li:nth-child(1){margin-left:0px}
+/*여백계산법 사용
+총길이 - 여백갯수 * 임의의 여백사이즈 / 내용물
+1140 - 9 * 20 / 10 = 96*/
+
+#ad_1 img{width:1140px;}
+/*img의 크기가 사진에 비해서 작거나 크다면 서잔을 보고 가로값을 조절해주면 된다*/
+
+.con_title h2{text-align:center;margin-top:50px;}
+
+.con li{width:270px;float:left;margin-left:20px;
+        margin-top:20px;}
+.con li:nth-child(4n+1){margin-left:0px;}
+/*여백계산법 사용
+총길이 - 여백갯수 * 임의의 여백사이즈 / 내용물
+1140 - 3*20/4 = 270*/
+
+.con{text-align:center;}
+
+.con h3, .con p{margin-bottom:10px;}
+.con span{color:red;}
+
+.con img{width:270px;}
+
+#ad_2{margin-top:50px}
+
+#ad_3{margin-top:50px}
