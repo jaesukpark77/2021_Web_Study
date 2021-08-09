@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>기타정보#1</title>
+    <style>
+    
+        h1~h2{color:red;}
+        /*선택자 ~ 선택자 = 앞에 있는 선택자 바로 뒤에 오는 모든 선택자를 골라주는 선택자*/
+        
+        h1+h2{color:orange;}
+        
+        /*선택자 + 선택자 = 앞에 있는 선택자 바로 뒤에오는 선택자를 골라주는 것*/
+        
+        ul li:first-child{color:green;font-size:30px;}
+        /*first-child << 대상 선택자 중에 가장 먼저오는 선택자를 골라주는 것*/
+        
+        ul li:last-child{color:red;font-size:35px;}
+        
+        /*last-child << 대상 선택자 중에 가장 마지막 선택자를 골라주는 것*/
+        
+    </style>
+</head>
+<body>
+    
+    <h1>안녕하세요</h1>
+    
+    <h2>h2태그입니다</h2>
+    <h3>h3태그입니다</h3>
+    <h2>h2태그입니다</h2>
+    <h3>h3태그입니다.</h3>
+    <h2>h2태그입니다</h2>
+
+    <h3>h3태그입니다</h3>
+    
+    <ul>
+        <li>첫번째 li</li>
+        <li>두번째 li</li>
+        <li>세번째 li</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>기타정보#5</title>
+    <style>
+        *{margin:0;padding:0;}
+        li{list-style:none;}
+        a{text-decoration:none;color:inherit;}
+        img{width:100%;} -> /*하나만 작성해주면 이제는 img태그는 별도로 가로길이를 수정할 필요 없이 img태그를 감싸주는 태그에 맞춰서 항상 크기가 유동적으로 할 수 있다*/
+        .clearfix:after{content:"";display:block;clear:both;}
+        #a{width:80%;height:300px;
+            background-color:#123456;
+            margin:0 auto;}
+        /*px = 고정값 절대로 이 값은 바뀌지 않는다*/
+        
+        /*% = 유동값 대상태그의 가로에 %값을 넣어주면 웹사이트의 가로길이에 맞춰서 값이 그때그때 유동적으로 바뀐다 (태그들 끼리도 영향을끼친다)*/
+        
+        #b{width:500px;border:2px solid red;}
+        
+        #c{width:700px;border:2px solid blue;}
+        
+        #d{width:50px;border:2px solid black;}
+        
+        img{width:100%}
+        
+        ul{width:70%;margin:0 auto;height:300px;
+            background-color:#123456;}
+        li{width:24.25%;margin-left:1%;
+            height:300px;background-color:#987654;
+            float:left;}
+        li:nth-child(1){margin-left:0px;}
+        
+        /*%단위일때 여백계산법
+        
+        총길이 - 여백갯수 * 임의의 여백사이즈 / 내용물
+        100%         3 *  1~3%(1%)*/
+        
+    </style>
+</head>
+<body>
+    <!--<div id="a"></div>
+    
+    <div id="b">
+        <img src="1.gif" alt="">
+    </div>
+    
+    <div id="c">
+        <img src="2.gif" alt="">
+    </div>
+    
+    <div id="d">
+        <img src="3.gif" alt="">
+    </div>-->
+    
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

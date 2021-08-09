@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>기타정보 #4</title>
+    <style>
+        h1{text-transform:capitalize}
+        /*영어한정으로 단어의 첫번째 알파벳을 대문자로 바꿔주는 css속성*/
+        h2{text-transform:uppercase}
+        /*영어한정 모든 알파벳을 전부 대문자로 바꿔준다*/
+        h3{text-transform:lowercase}
+        /*영어한정 모든 알파벳을 전부 소문자로 바꿔준다*/
+        
+        #a{color:red;}
+        /*글자와 관련된 css속성은 원래 당사자가 아니라 당사자를 감싸고 있는 태그한테줘도 그 하위에 있는 태그한테 영향을 끼친다*/
+        
+        a{text-decoration:none;color:inherit;}
+        /*color:inherit = 대상에 글자색을 정해두지 않고 대상을 감싸고 있는 부모태그에 글자색을 알아서 상속을 받아서 적용시키겠다라는 상속형 색갈 태그 / 기본적으로 글자를 검은색으로 만들어준다.*/
+        
+    </style>
+</head>
+<body>
+    <h1>hello good moring</h1>
+    <h2>hello good moring</h2>
+    <h3>Hello good moring</h3>
+    
+    <div id="a">
+        <a href="#">hello good moring</a>
+    </div>
+</body>
+</html>

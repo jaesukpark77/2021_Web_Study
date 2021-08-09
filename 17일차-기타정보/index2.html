@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>기타정보 #2</title>
+    <style>
+        *{margin:0;padding:0;}
+        div{width:300px;height:300px;
+            margin-top:20px}
+        
+        #a1{background-color:red;} /*1번 색상명을 단어로 적어서 표현*/
+        
+        #a2{background-color:#987654;} /*★2번 hex코드를 넣어주는 방식 #과 함께 사용필수*/
+        
+        #a3{background-color:rgb(57,143,192)} /*3번 rgb코드값을 이용한 방식*/
+        
+        #a4{background-color:rgba(121,192,57,0.3)} /*4번 rgb코드값 + opacity*/ 
+        /*맨 끝에 값이 불투명도를 뜻하며 0.1 = 10% / 1 = 100% 만큼의 불투면도를 가진다*/
+        
+        #a5{background-color:hsl(3,65%,67%)} 5번 /*hsl = hue 색상 saturation 채도 lightness 명도*/
+        
+        #a6{background-color:hsla(3,65%,67%,0.5)} 6번 /*hsl + opacity*/
+    </style>
+</head>
+<body>
+    <div id="a1"></div>
+    <div id="a2"></div>
+    <div id="a3"></div>
+    <div id="a4"></div>
+    <div id="a5"></div>
+    <div id="a6"></div>
+</body>
+</html>
